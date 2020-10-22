@@ -1,0 +1,19 @@
+.basic-button{
+    display: inline-block;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    height: 32px;
+    line-height: 32px;
+    vertical-align: middle;
+    padding: 0 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+@media screen and (min-width: 1024px) {
+    .basic-button:hover{
+        background-color: #272727;
+    }
+}

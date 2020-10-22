@@ -1,0 +1,77 @@
+.comp-tags{
+    margin-top: 24px;
+    border-radius: 4px;
+    h2{
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+    .tag-list{
+        background-color: #1e1e1e;
+        padding: 16px;
+        .first-tag{
+            border-radius: 4px;
+            margin-bottom: 12px;
+            background-color: #333;
+            height: 36px;
+            overflow: hidden;
+            transition: .3s;
+            p{
+                height: 36px;
+                cursor: pointer;
+                position: relative;
+                border-radius: 4px;
+                background-color: #1e1e1e;
+                transition: .2s;
+            }
+            img,svg,.tag-name{
+                display: inline-block;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                transition: .3s;
+            }
+            svg{
+                left: 8px;
+            }
+            .tag-name{
+                left: 32px;
+            }
+            img{
+                right: 8px;
+            }
+            .second-tags{
+                box-sizing: border-box;
+                border-radius: 4px;
+                word-wrap: break-word;
+                overflow: hidden;
+                padding: 0 8px;
+                .link{
+                    display: inline-block;
+                    padding: 0 8px;
+                    margin: 8px 0;
+                    height: 24px;
+                    line-height: 24px;
+                    text-align: center;
+                    transition: .2s;
+                }
+            }
+        }
+    }
+}
+.first-tag p:hover{
+    background-color: #333 !important;
+}
+
+.first-tag-active{
+    height: auto !important;
+    img{
+        transform: translateY(-50%) rotate(180deg) !important;
+    }
+    p{
+        background-color: #333 !important;
+    }
+}
+.comp-tags .second-tags .link:hover{
+    background-color: #1e1e1e;
+}

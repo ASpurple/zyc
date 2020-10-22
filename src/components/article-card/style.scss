@@ -1,0 +1,31 @@
+.comp-article-card{
+    box-sizing: border-box;
+    position: relative;
+    height: 100px;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #1e1e1e;
+    h2{
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    img{
+        width: 168px;
+        height: 84px;
+        position: absolute;
+        left: 8px;
+        top: 8px;
+        border-radius: 4px;
+    }
+    .info{
+        height: 100%;
+        margin-left: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        p{
+            color: #999;
+        }
+    }
+}
